@@ -21,10 +21,11 @@ async def help_command(message: types.Message):
     keyboard = types.InlineKeyboardMarkup()
     # Создаем кнопку
     url_button1 = types.InlineKeyboardButton(text="Discord 1", url="https://discord.com/channels/vorobyshekchirik#8905")
-    url_button2 = types.InlineKeyboardButton(text="...", url="https://web.telegram.org/a/#1882801381")
+    url_button2 = types.InlineKeyboardButton(text="черепашки", url="https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%B0%D1%85%D0%B8")
     url_button3 = types.InlineKeyboardButton(text="Perm-ACOIN", url="https://perm-acoin.ru/")
     keyboard.add(url_button1, url_button2, url_button3)
     await message.reply("Чем я могу тебе помочь? Нажми на одну из кнопок, чтобы перейти на Discord или на сайт Perm-ACOIN.", reply_markup=keyboard)
 # Запускаем бота
 if __name__ == '__main__':
     executor.start_polling(dp)
+   
